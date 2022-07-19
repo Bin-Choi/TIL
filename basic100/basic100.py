@@ -58,6 +58,6 @@
 # 6019
 # y,m,d = input().split('.')
 # print(f'{d}-{m}-{y}')
-6020
-a,b = input().split('-')
-print(a+b)
+# 6020
+# a,b = input().split('-')
+# print(a+b)
