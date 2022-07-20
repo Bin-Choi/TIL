@@ -1,0 +1,34 @@
+## 조건표현식
+
+return = (True값) if 조건 else (Flase값)
+print(return)
+
+##반복문 - for, while 
+
+while은 종료코드가 필요함 (안하면 무한루프)
+for은 반복가능한 객체를 모두 순회하면 종료
+
+##복합연산자
+
+연산과 할당을 합쳐 놓은것 ( += 등)
+
+##for문 순회 
+###Dict순회
+- 추가 메서드를 활용하여 순회 가능
+  - keys() : key값 뽑기
+  - values() : values값 뽑기
+  - items() : (key, value) 튜플로 뽑기
+  
+###enumerate
+- index 와 객체를 쌍으로 담은 열거형 객체 반환
+  - (index, value)형태의 튜플로 구성된 열거 객체 반환
+  - (index 숫자 출발점은 지정 가능, 기본값 0 )
+
+###List Comprehenion
+- 표현식과 제어문을 통해 특정한 값을 가진 리스트를 간결하게 생성하는 방법
+- [code for 변수 in iterable]  
+- [code for 변수 in iterable if 조건식]
+
+- 딕셔너리 생성
+- [key: value for 변수 in iterable]
+- [key: value for 변수 in iterable if 조건식]
