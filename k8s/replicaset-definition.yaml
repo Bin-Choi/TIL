@@ -4,18 +4,20 @@ metadata:
   name: myapp-replicaset
   labels:
     app: myapp
+    type: front-end
 spec:
   template:
     metadata:
-      name: nginx-2
+      name: myapp-pod
       labels:
         app: myapp
+        type: front-end
     spec:
       containers:
-        - name: nginx
-          image: nginx
-  replicas: 4
+      - name: nginx-container
+        image: nginx
+  replicas: 3
   selector:
     matchLabels:
-      app: myapp
+      type: front-end
       
